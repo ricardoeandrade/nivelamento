@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Space+Grotesk:wght@500&family=Trispace&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+:root {
+    --marrom: #461220;
+    --vermelho: #8c2f39;
+    --cinza: #c2c2c2;
+    --lilas: #b23a48;
+    --Verde: #28464b;
+    --jose: 'Josefin Sans', sans-serif;
+    --space: 'Space Grotesk', sans-serif;
+}
+
+.container-grid {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1400px;
+
+}
+
+html {
+    /* quando clica no link com a ID ele desce mais suave */
+    scroll-behavior: smooth;
+
+}
+
+header {
+    background-image: linear-gradient(90deg, rgba(152, 220, 224, 0.00) 0.99%, rgba(190, 216, 220, 0.51) 1%, #28464B 98.44%);
+    height: 130px;
+
+
+}
+
+.header-flex {
+    display: flex;
+}
+
+.imagem-logo {
+    width: 145px;
+    height: 120px;
+
+}
+
+.links-header {
+    display: flex;
+    flex-direction: row;
+
+    width: 1200px;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+.menu-navegacao {
+    display: flex;
+    justify-content: flex-end;
+    width: 200px;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    color: #c2c2c2;
+
+
+}
+
+
+.menu-navegacao li {
+
+    font-size: var(--jose);
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 900px;
+    font-style: italic;
+
+
+
+}
+
+.menu-navegacao li a {
+    text-decoration: none;
+    color: #c2c2c2;
+
+}
+
+.menu-navegacao li a:hover {
+    color: lightcoral;
+    transition: 0.5s;
+}
+
+/* Estilização do Banner */
+
+.banner {
+    background-image: url(Imagens/Banner.jpg);
+    height: 580px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+}
+
+/* .card-flex {
+    background-image: url(Imagens/robot-2937861_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    
+
+    
+} */
+
+
+/* Estilização icone coração */
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.coracao {
+    display: flex;
+    position: absolute;
+    align-self: flex-end;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+.icone-coracao {
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.icone-coracao:hover {
+    background-color: antiquewhite;
+    transition: 0.5s;
+
+
+}
+
+
+
+
+/* Estilização dos Cards */
+.info-card {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+
+}
+
+.info-card img {
+    width: 450px;
+    border-radius: 20px;
+
+}
+
+.info-card h1 {
+
+    margin-top: 10px;
+    padding: 6px;
+    width: 450px;
+    text-align: center;
+    font-family: var(--jose);
+    font-size: 24px;
+    font-weight: 900px;
+    letter-spacing: 2px;
+    color: #8c2f39;
+}
+
+.info-card p {
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 6px;
+    width: 450px;
+    font-family: var(--space);
+    text-align: justify;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+
+}
+
+hr {
+    border: 2px solid #28464B;
+    border-radius: 20px;
+
+
+}
+
+/* Estilização do Footer */
+footer {
+    background-image: linear-gradient(90deg, rgba(152, 220, 224, 0.00) 0.99%, rgba(190, 216, 220, 0.51) 1%, #28464B 98.44%);
+    height: 60px;
+
+
+
+
+}
+
+.paragrafo-footer {
+
+    text-align: center;
+    font-family: var(--space);
+    font-size: 16px;
+    font-weight: 900px;
+    letter-spacing: 2px;
+}
+
+.topo img {
+    height: 30px;
+}
+
+.topo {
+
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 250px;
+
+
+
+}
+
+/* Estilização do contato */
+
+.banner-contato {
+    background-image: url(Imagens/banner-contato.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    position: relative;
+}
+
+.banner-flex-contato h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    font-family: var(--jose);
+    font-weight: 900px;
+    letter-spacing: 2px;
+    font-size: 36px;
+
+}
+
+.info-contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid black;
+    height: 880px;
+
+}
+
+.paragrafo-contato {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+    
+}
+
+.paragrafo-contato h1 {
+    border: 2px solid black;
+    height: 494px;
+    text-align: justify;
+    padding-top: 60px;
+    font-family: var(--jose);
+    font-weight: 800px;
+    font-size: 26px;
+    letter-spacing: 2px;
+
+
+}
+
+.form-flex{
+    border: 2px solid black;
+    width: 550px;
+}
+.info-contato label {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--jose);
+    font-size: 26px;
+    font-weight: 900px;
+    padding: 6px;
+
+
+
+}
+
+.info-contato input {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--jose);
+    font-size: 26px;
+    font-weight: 900px;
+    padding: 6px;
+
+}
